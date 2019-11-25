@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BloodBank & Donor Management System Become A Donar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="https://www.amafx.com/wp-content/themes/AMA-FX/css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <style>
+        .errorWrap {
+            padding: 10px;
+            margin: 0 0 20px 0;
+            background: #fff;
+            border-left: 4px solid #dd3d36;
+            -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+        }
+
+        .succWrap {
+            padding: 10px;
+            margin: 0 0 20px 0;
+            background: #fff;
+            border-left: 4px solid #5cb85c;
+            -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <%-include("header")-%>
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">Login<small></small></h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Login</li>
+        </ol>
+        <% if(messages.error){%>
+
+         <div class="errorWrap"><strong>ERROR: <%= messages.error %></strong></div>
+        <% } %>
+        <!-- Content Row -->
+        <form action="/login" name="donar" method="POST">
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="font-italic">Email Id<span style="color:red">*</span></div>
+                    <div><input type="email" name="email" class="form-control"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="font-italic">Password<span style="color:red">*</span></div>
+                    <div><input type="password" name="password" class="form-control" required></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div><button type="submit" name="submit" class="btn btn-primary" value="submit"
+                            style="cursor:pointer">Go</button></div>
+
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div><a href="/become-donor" class="btn btn-secondary" value="submit"
+                            style="cursor:pointer;margin-left: -190px;">Go for Registration</a></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <%-include("footer")-%>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/jquery/jquery.js"></script>
+    <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

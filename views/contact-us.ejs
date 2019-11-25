@@ -39,33 +39,7 @@
 
 <body>
    <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">BloodBank & Donor Management System</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="page.html">why become donar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="become-donar.html">become donar</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link " href="search-donar.html">search blood</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link " href="contact us.html" >contact us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <%-include("header")-%>
     <!-- Page Content -->
     <div class="container">
 
@@ -74,7 +48,7 @@
 
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
             </li>
             <li class="breadcrumb-item active">Contact</li>
         </ol>
@@ -141,13 +115,8 @@
     </div>
      <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy;BloodBank & Donor Management System 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
+     <%-include("footer")-%>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/jquery/jquery.js"></script>
