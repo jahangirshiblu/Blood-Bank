@@ -1,3 +1,16 @@
+<!-- <%-include("header")-%>
+<h1>Hi <%= user.name %> </h1>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html> -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,58 +53,36 @@
 
 </head>
 
-<body>
+<body style="background-image: url('./images/banner1.jpg')">
     <%-include("header")-%>
     <!-- Page Content -->
     <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
-        <h1 class="mt-4 mb-3">Login<small></small></h1>
+        <h1 class="mt-4 mb-3" style="color: white;font-weight: bolder;"><%= user.name %><small
+                style="float: right;font-weight: bolder;">ID: <%= user.id %> </small></h1>
 
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
                 <a href="/">Home</a>
+                <a href="/users/logout" class="btn btn-secondary" style="position: absolute;
+    left: 13%;
+    bottom: 75%;">Logout</a>
+                <form action="/delete" method="post">
+                    <input type="text" class="form-control" name="id" value="<%= user._id %>" hidden>
+                    <button type="submit" class="btn btn-danger" style="position: fixed;
+    bottom: 80%;
+    left: 13%;"> Delete Account </button>
+                </form>
             </li>
-            <li class="breadcrumb-item active">Login</li>
         </ol>
-        
         <% include ./partials/messages %>
         <!-- Content Row -->
-        <form action="/users/login" name="donar" method="POST">
-
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="font-italic">Email Id<span style="color:red">*</span></div>
-                    <div><input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" />
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="font-italic">Password<span style="color:red">*</span></div>
-                    <div><input type="password" id="password" name="password" class="form-control"
-                            placeholder="Enter Password" /></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div><button type="submit" name="submit" class="btn btn-primary" value="submit"
-                            style="cursor:pointer">Go</button></div>
-
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div><a href="/users/become-donor" class="btn btn-secondary" value="submit"
-                            style="cursor:pointer;margin-left: -190px;">Go for Registration</a></div>
-                </div>
-            </div>
-        </form>
+        <h1 class="mt-4 mb-3" style="color: white;font-weight: bolder;">Thanks for being a part of life saver!!!!!</h1>
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <%-include("footer")-%>
-
-
     <!-- Bootstrap core JavaScript -->
     <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/jquery/jquery.js"></script>
     <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/js/bootstrap.bundle.js"></script>
