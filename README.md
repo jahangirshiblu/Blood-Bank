@@ -1,57 +1,27 @@
-# Blood-bank
+Welcome to Glitch
+=================
 
-# Using Technologies:
-# Frontend
-1.HTML
+Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
-2.CSS
+**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
 
-3.Javascript
+Find out more [about Glitch](https://glitch.com/about).
 
-4.Bootstrap
 
-5.Jquery
+Your Project
+------------
 
-# Backend
-1.NodeJS
+On the front-end,
+- edit `public/client.js`, `public/style.css` and `views/index.html`
+- drag in `assets`, like images or music, to add them to your project
 
-2.CRUD Operation
+On the back-end,
+- your app starts at `server.js`
+- add frameworks and packages in `package.json`
+- safely store app secrets in `.env` (nobody can see this but you and people you invite)
 
-3.MongoDB
 
-# Browsers:
-Mozilla,
+Made by [Glitch](https://glitch.com/)
+-------------------
 
-Google Chrome.
-
-# Feature's:
-1.Responsive template,mobile Fridenly.
-
-2.Easy to use.
-
-3.Blood Donar Registration System.
-
-4.Blood group.
-
-5.Donar Details Information.
-
-6.Contact us Inquriy.
-
-Project Plan:
-week 8:Almost complete homepage's frontend
-
-week 9: I will finish homepage
-
-week 10: Upgrade homepage's frontend
-
-week 11: Design backend for whole project and learn advance backend
-
-week 12: Apply backend in front page and other few pages
-
-week 13: Upgrade project applying frontend and backend
-
-week 14: Add all features in my project and upgrade so far
-
-week 15: Complete whole project and review all the features
-
-week 16: Upgrade, Check and finish whole project
+\ ゜o゜)ノ
