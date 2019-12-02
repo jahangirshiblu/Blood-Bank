@@ -57,6 +57,7 @@ app.get("/login", (req,res)=>{
 app.get('/user', (req, res)=>{
     res.render("user", {users: users});
 });
+
 app.delete('/logout', (req,res)=>{
     req.logOut();
     res.redirect('/login');
@@ -101,3 +102,5 @@ function canNotGoToAccountIfNotLogIN(req, res, next){
 app.listen(3000,(req,res)=>{
     console.log("Server-Port: 3000");
 });
+
+
