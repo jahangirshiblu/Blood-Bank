@@ -1,4 +1,4 @@
-# bbdms
+# BloodBank
 
 Using Technologies:
 Frontend
@@ -29,11 +29,11 @@ Feature's:
 
 2.Easy to use.
 
-3.Blood Donar Registration System.
+3.Blood Donor Registration System.
 
 4.Blood group.
 
-5.Donar Details Information.
+5.Donor Details Information.
 
 6.Contact us Inquriy.
 

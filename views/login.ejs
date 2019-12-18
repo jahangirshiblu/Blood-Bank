@@ -3,20 +3,23 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>BloodBank & Donor Management System Become A Donar</title>
+    <title>BloodBank & Donor Management System Become A Donor</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Custom styles for this template -->
-    <link href="https://www.amafx.com/wp-content/themes/AMA-FX/css/modern-business.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://www.amafx.com/wp-content/themes/AMA-FX/css/modern-business.css">
+    <link rel="stylesheet" href="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/css/bootstrap.css">
 
+
+</head>
+
+<body>
+    <%-include("header")-%>
+  
     <style>
         .errorWrap {
             padding: 10px;
@@ -46,7 +49,7 @@
     <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
-        <h1 class="mt-4 mb-3">Login<small></small></h1>
+        <h1 class="mt-4 mb-3">ADMIN PANEL</h1>
 
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -57,7 +60,7 @@
         
         <% include ./partials/messages %>
         <!-- Content Row -->
-        <form action="/users/login" name="donar" method="POST">
+        <form action="/users/login" name="donor" method="POST">
 
             <div class="row">
                 <div class="col-lg-4 mb-4">
@@ -86,18 +89,12 @@
             </div>
         </form>
     </div>
-    <!-- /.container -->
-
-    <!-- Footer -->
-    <%-include("footer")-%>
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/jquery/jquery.js"></script>
-    <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+ 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/jquery/jquery.js"></script>
+    <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

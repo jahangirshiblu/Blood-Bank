@@ -87,7 +87,6 @@ router.post('/login', (req, res, next) => {
   })(req, res, next);
 });
 
-//delete
 
 
 // Logout

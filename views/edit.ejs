@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<h1 lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom styles for this template -->
+  <link href="https://www.amafx.com/wp-content/themes/AMA-FX/css/modern-business.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link href="//bloodbank.live/home/css/responsive.css">
+    <title>Edit Profile</title>
+</head>
+
+<body class="form">
+    <div style="margin: 3% 0%;">
+        <div style="margin: 3% 0%;">
+            <h3>Change Credentials</h3>
+            <h3>Current Name: <span style="color:red"><%= user.name %></span></h3>
+            <h3>Current Email: <span style="color:red"><%= user.email %></span></h3>
+        </div>
+        <form action="/edit" method="POST" style="margin: 3%  54% 3% 0%;">
+            <input type="text" name="name" class="form-control" id="name" required placeholder="Edit Your Name">
+            <input type="email" name="email" class="form-control" id="email" required placeholder="Edit Your Email">
+            <input type="text" name="id" id="id" value="<%= user._id %>" hidden>
+            <button type="submit" class="btn btn-primary"> Save </button>
+            <a href="/setting" class="btn btn-"> Setting </a>
+            <a href="/dashboard" class="btn btn-primary"> Go back to admin </a>
+            <a href="/" class="btn btn-primary"> Back To Home </a>
+        </form>
+    </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/jquery/jquery.js"></script>
+  <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
