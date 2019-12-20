@@ -55,5 +55,5 @@ week 14: Add all features in my project and upgrade so far
 
 week 15: Complete whole project and review all the features
 
-week 16: Upgrade, Check and finish whole project
+week 16: Upgrade, Check and finish whole project.    
 [Site Link](https://jahangirshiblu-blood-bank-2.glitch.me/)
