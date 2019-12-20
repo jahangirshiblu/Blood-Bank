@@ -36,6 +36,7 @@ Feature's:
 5.Donor Details Information.
 
 6.Contact us Inquriy.
+7. blogpost
 
 Project Plan:
 week 8:Almost complete homepage's frontend
@@ -55,3 +56,4 @@ week 14: Add all features in my project and upgrade so far
 week 15: Complete whole project and review all the features
 
 week 16: Upgrade, Check and finish whole project
+[Site Link](https://jahangirshiblu-blood-bank-2.glitch.me/)
