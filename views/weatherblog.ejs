@@ -6,10 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blood bank & blood donor management system</title>
 
-    <title>BloodBank & Donor Management System Become A Donor</title>
 
-    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/css/bootstrap.css">
@@ -18,26 +17,28 @@
 
 </head>
 
-<body style="background-image: url('./images/banner1.jpg')">
-    <%-include("header")-%>
-    <div class="form">
-        <a href="/users/logout" class="btn btn-primary" style="float: left;margin:1spx">Logout</a>
-        <a href="/setting" class="btn btn-secondary" style="float: left;margin:1px">Settings</a>
-        <a href="/" class="btn btn-primary" style="float:left;margin:1px"> Back To Home </a>
-        <a href="/users/adminpost" class="btn btn-primary" style="float:left;margin:1px"> BlogPost </a>
+<body>
+    <div class="container" style="min-height: 750px;">
+        <h1 style="text-align: center;color:red">Daily Blood Blogs</h1>
+        <% blog.forEach(function(blog){ %>
+        <h1> <%= blog.blogTitle %></h1>
+        <p><%= blog.blog %></p>
+        <% }); %>
+    </div>
 
-        <form action="/delete" method="post">
-            <input type="text" class="form-control" name="id" value="<%= user._id %>" hidden>
-            <button type="submit" class="btn btn-danger" style="float: left;margin:1px"> Delete Account </button>
-        </form>
-         <div style="padding: 7% 24%;font-size: 48px;
-     font-family: fantasy;">
-             <h1 >Hi <%= user.name %></h1>
-             <h1 >Welcome to BloodBank</h1>
-             <h1 >Thanks for the part of  life saving.</h1>
- 
-         </div>
-     </div>
+    <!-- Navigation -->
+    <%-include("header")-%>
+
+    <!-- Page Content -->
+
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy;BloodBank & Donor Management System 2019</p>
+        </div>
+
+    </footer>
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>

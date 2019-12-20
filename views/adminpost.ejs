@@ -24,20 +24,34 @@
         <a href="/users/logout" class="btn btn-primary" style="float: left;margin:1spx">Logout</a>
         <a href="/setting" class="btn btn-secondary" style="float: left;margin:1px">Settings</a>
         <a href="/" class="btn btn-primary" style="float:left;margin:1px"> Back To Home </a>
+        <a href="/dashboard" class="btn btn-primary" style="float:left;margin:1px"> Back To user </a>
         <a href="/users/adminpost" class="btn btn-primary" style="float:left;margin:1px"> BlogPost </a>
-
-        <form action="/delete" method="post">
-            <input type="text" class="form-control" name="id" value="<%= user._id %>" hidden>
-            <button type="submit" class="btn btn-danger" style="float: left;margin:1px"> Delete Account </button>
-        </form>
-         <div style="padding: 7% 24%;font-size: 48px;
+        <div style="padding: 7% 24%;font-size: 48px;
      font-family: fantasy;">
-             <h1 >Hi <%= user.name %></h1>
-             <h1 >Welcome to BloodBank</h1>
-             <h1 >Thanks for the part of  life saving.</h1>
- 
-         </div>
-     </div>
+            <div class="col-lg-12">
+                <div class="col-lg-12 login-title">
+                    <%-include("./partials/messages")-%>
+                    <form action="/users/adminpost" method="post">
+                        <div class="form-row">
+                            <input type="text" id="blogTitle" name="blogTitle" class="form-control"
+                                placeholder="Blog Title"
+                                value="<%= typeof blogTitle != 'undefined' ? blogTitle : '' %>" />
+                        </div>
+                        <div class="form-row">
+                            <textarea name="blog" id="blog" cols="30" class="form-control" rows="10"
+                                placeholder="Write Your Blog Here"
+                                value="<%= typeof blog != 'undefined' ? blog : '' %>"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-outline-primary"
+                                style="padding-left: 60px;padding-right: 60px;"> Post </button>
+                            <a href="/users/user" class="btn btn-outline-primary">Go Back To Your Account</a>
+                        </div>
+                    </form>
+                </div>
+
+        </div>
+    </div>
     <!-- Bootstrap core JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>

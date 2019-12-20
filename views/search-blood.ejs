@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <title>blood bank & blood donar management system</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://www.amafx.com/wp-content/themes/AMA-FX/css/modern-business.css">
+
+        <style>
+    .errorWrap {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #dd3d36;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.succWrap{
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background: #fff;
+    border-left: 4px solid #5cb85c;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+    </style>
+
+
+</head>
+
+<body>
+
+
+  <!-- Navigation -->
+  <%-include("header")-%>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">Search <small>Blood</small></h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Search blood</li>
+        </ol>
+        
+        <!-- Content Row -->
+        <form name="blood" method="post">
+<div class="row">
+
+
+
+<div class="col-lg-4 mb-4">
+<div class="font-italic">Blood Group<span style="color:red">*</span> </div>
+<div><select name="bloodgroup" class="form-control" required>
+
+<option value=""></option>
+
+</select>
+</div>
+</div>
+
+
+<div class="col-lg-4 mb-4">
+<div class="font-italic">Location </div>
+<div><textarea class="form-control" name="location"></textarea></div>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-lg-4 mb-4">
+<div><input type="submit" name="submit" class="btn btn-primary" value="submit" style="cursor:pointer"></div>
+</div>
+</div>
+       <!-- /.row -->
+</form>   
+
+        <div class="row">
+    
+
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top img-fluid" src="images/blood-donor.jpg" alt="" ></a>
+                    <div class="card-block">
+                        <h4 class="card-title"><a href="#"></a></h4>
+                        <p class="card-text"><b>Mobile No. / Email Id :</b>  /
+                        </p>
+     <p class="card-text"><b>Message :</b> </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+          
+ 
+
+
+
+        </div>
+
+
+
+</div>
+ <!-- /.container -->
+
+  <!-- Footer -->
+  <%-include("footer")-%>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/jquery/jquery.js"></script>
+  <script src="https://www.amafx.com/wp-content/themes/AMA-FX/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

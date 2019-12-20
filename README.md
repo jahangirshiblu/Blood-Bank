@@ -1,7 +1,7 @@
 # BloodBank
 
-Using Technologies:
-Frontend
+# Using Technologies:
+# Frontend
 1.HTML
 
 2.CSS
@@ -12,7 +12,7 @@ Frontend
 
 5.Jquery
 
-Backend
+# Backend
 1.NodeJS
 
 2.CRUD Operation
@@ -40,7 +40,7 @@ Feature's:
 Project Plan:
 week 8:Almost complete homepage's frontend
 
-week 9: I will finish homepage
+week 9: finish homepage
 
 week 10: Upgrade homepage's frontend
 
